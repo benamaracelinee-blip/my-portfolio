@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>My Professional Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+* {
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins', sans-serif;
+scroll-behavior: smooth;
+}
+
+body {
+background: linear-gradient(135deg, #f5f3ff, #ede9fe, #ffffff);
+color:#4c1d95;
+overflow-x: hidden;
+}
+
+nav {
+display:flex;
+justify-content:space-between;
+align-items: center;
+padding:20px 40px;
+background: rgba(255,255,255,0.7);
+backdrop-filter: blur(15px);
+position: sticky;
+top: 0;
+z-index: 1000;
+border-bottom: 1px solid rgba(124, 58, 237, 0.1);
+}
+
+nav a {
+color:#7c3aed;
+margin-left:20px;
+text-decoration:none;
+font-weight: 600;
+transition: color 0.3s;
+}
+
+nav a:hover {
+color: #4c1d95;
+}
+
+.hero {
+text-align:center;
+padding:100px 20px;
+}
+
+.hero img {
+width:170px;
+height:170px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #c4b5fd;
+box-shadow:0 10px 30px rgba(124, 58, 237, 0.2);
+}
+
+.section {
+padding: 80px 40px;
+max-width: 1200px;
+margin: auto;
+}
+
+h2 {
+margin-bottom: 40px;
+font-size: 2.5rem;
+text-align: center;
+color: #5b21b6;
+}
+
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 30px;
+}
+
+.card {
+background: white;
+padding: 25px;
+border-radius: 20px;
+box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+transition: all 0.4s ease;
+border: 1px solid rgba(124, 58, 237, 0.05);
+}
+
+.card:hover {
+transform: translateY(-15px);
+box-shadow: 0 20px 40px rgba(124, 58, 237, 0.1);
+}
+
+.contact-footer {
+text-align: center;
+padding: 120px 20px;
+background: linear-gradient(to bottom, transparent, rgba(124, 58, 237, 0.08));
+border-radius: 60px 60px 0 0;
+margin-top: 50px;
+}
+
+.fade-in-text {
+font-size: 1.6rem;
+font-weight: 400;
+color: #4c1d95;
+max-width: 850px;
+margin: 0 auto;
+line-height: 1.7;
+opacity: 0;
+transform: translateY(40px);
+animation: fadeInUp 1.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.contact-footer b {
+color: #7c3aed;
+font-weight: 700;
+}
+
+@keyframes fadeInUp {
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+.cta-button {
+display: inline-block;
+margin-top: 40px;
+padding: 18px 50px;
+background: #7c3aed;
+color: white;
+text-decoration: none;
+border-radius: 50px;
+font-weight: 600;
+letter-spacing: 0.5px;
+transition: all 0.3s ease;
+box-shadow: 0 10px 25px rgba(124, 58, 237, 0.4);
+}
+
+.cta-button:hover {
+background: #6d28d9;
+transform: scale(1.08);
+box-shadow: 0 15px 35px rgba(124, 58, 237, 0.5);
+}
+
+@media (max-width: 768px) {
+nav { padding: 15px 20px; }
+.section { padding: 40px 20px; }
+.fade-in-text { font-size: 1.2rem; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+<div style="font-weight: bold; font-size: 1.4rem; color: #7c3aed;">Portfolio.</div>
+<div>
+<a href="#">Home</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<div class="hero">
+<img src="https://images.unsplash.com/photo-1522199710521-72d69614c702" alt="Profile Image"/>
+<h1 style="margin-top:25px; font-size: 3rem;">Welcome to My Creative Space</h1>
+<p style="font-size: 1.1rem; color: #6b7280;">Passion driven by design and digital direction.</p>
+</div>
+
+<div class="section" id="projects">
+<h2>Featured Projects</h2>
+<div class="grid">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1522199710521-72d69614c702" style="width:100%; border-radius:15px; margin-bottom:15px;" alt="Project 1"/>
+<h3>Beauty Brand Identity</h3>
+<p style="color: #6b7280; margin: 10px 0;">Complete visual identity for a modern beauty brand.</p>
+<a href="#" style="display:inline-block; margin-top:10px; color:#7c3aed; font-weight: 600;">View Project →</a>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231" style="width:100%; border-radius:15px; margin-bottom:15px;" alt="Project 2"/>
+<h3>Instagram Campaign</h3>
+<p style="color: #6b7280; margin: 10px 0;">Social media campaign with high engagement visuals.</p>
+<a href="#" style="display:inline-block; margin-top:10px; color:#7c3aed; font-weight: 600;">View Project →</a>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7" style="width:100%; border-radius:15px; margin-bottom:15px;" alt="Project 3"/>
+<h3>Blog Articles</h3>
+<p style="color: #6b7280; margin: 10px 0;">SEO optimized articles about design and creativity.</p>
+<a href="#" style="display:inline-block; margin-top:10px; color:#7c3aed; font-weight: 600;">View Project →</a>
+</div>
+</div>
+</div>
+
+<div class="contact-footer" id="contact">
+<p class="fade-in-text">
+“Feel free to reach out for more details or if any project caught your attention — <b>I’d be happy to discuss and collaborate with you.</b>”
+</p>
+<a href="mailto:your-email@example.com" class="cta-button">Start a Conversation</a>
+</div>
+
+</body>
+</html>
